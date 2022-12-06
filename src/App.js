@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+// import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import { Header, ProductDetail, ProductListing } from "./components";
 
 function App() {
+  // const [searchTerm, setSearchTerm] = useState("");
+  // const [products, setProducts] = useState([]);
+  // const [searchResults, setSearchResults] = useState([]);
+
+  // const searchHandler = (searchItem) => {
+  //   setSearchTerm(searchItem);
+  //   if (searchItem !== "") {
+  //     const newItemList = products.filter((product) => {
+  //       return Object.values(product)
+  //         .join(" ")
+  //         .toLowerCase()
+  //         .includes(searchItem.toLowerCase());
+  //     });
+  //   }
+  // };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ProductListing />
+            }
+          />
+          <Route path="/product/:productId" element={<ProductDetail />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
