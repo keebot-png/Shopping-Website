@@ -184,7 +184,7 @@ Feel free to check the [issues page](../../issues/).
 
 - Microverse
 
-- I would like to thank <a href="https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)"Nelson Sakwa</a> for the amazing idea on Behance.
+- I would like to thank <a href="https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)">Nelson Sakwa</a> for the amazing idea on Behance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
