@@ -22,14 +22,19 @@ Object {
         <div
           class="main"
         >
-          <input
-            placeholder="Filter by product name..."
-            type="text"
-            value=""
-          />
           <div
             class="ui centered grid container"
-          />
+          >
+            <div
+              class="ui left corner labeled input"
+            >
+              <input
+                placeholder="Search..."
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -51,14 +56,19 @@ Object {
         <div
           class="main"
         >
-          <input
-            placeholder="Filter by product name..."
-            type="text"
-            value=""
-          />
           <div
             class="ui centered grid container"
-          />
+          >
+            <div
+              class="ui left corner labeled input"
+            >
+              <input
+                placeholder="Search..."
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -81,14 +91,19 @@ Object {
       <div
         class="main"
       >
-        <input
-          placeholder="Filter by product name..."
-          type="text"
-          value=""
-        />
         <div
           class="ui centered grid container"
-        />
+        >
+          <div
+            class="ui left corner labeled input"
+          >
+            <input
+              placeholder="Search..."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>,
