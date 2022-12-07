@@ -1,12 +1,9 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const ProductComponents = () => {
-  const products = useSelector((state) => state.allProducts.products);
-  const filteredProducts = products.filter((product) => product.category.includes('jewelery'));
-
-  const renderList = filteredProducts.map((product) => {
+const ProductComponents = ({ products }) => {
+  const renderList = products.map((product) => {
     const {
       id, title, image, price, category,
     } = product;
@@ -35,6 +32,18 @@ const ProductComponents = () => {
     );
   });
   return <>{renderList}</>;
+};
+
+ProductComponents.propTypes = {
+  products: PropTypes.arrayOf(PropTypes.shape(
+    {
+      id: PropTypes.number,
+      title: PropTypes.string,
+      image: PropTypes.string,
+      price: PropTypes.number,
+      category: PropTypes.string,
+    },
+  )).isRequired,
 };
 
 export default ProductComponents;
