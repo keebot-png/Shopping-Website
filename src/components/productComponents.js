@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 
 const ProductComponents = () => {
   const products = useSelector((state) => state.allProducts.products);
-  
-  const renderList = products.map((product) => {
+  const filteredProducts = products.filter((product) => product.category.includes('jewelery'));
+
+  const renderList = filteredProducts.map((product) => {
     const {
       id, title, image, price, category,
     } = product;
-    
+
     return (
       <div className="twelve wide column" key={id}>
         <Link to={`/product/${id}`}>

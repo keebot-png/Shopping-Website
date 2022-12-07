@@ -1,25 +1,8 @@
 // import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
-import { Header, ProductDetail, ProductListing } from "./components";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Header, ProductDetail, ProductListing } from './components';
 
 function App() {
-  // const [searchTerm, setSearchTerm] = useState("");
-  // const [products, setProducts] = useState([]);
-  // const [searchResults, setSearchResults] = useState([]);
-
-  // const searchHandler = (searchItem) => {
-  //   setSearchTerm(searchItem);
-  //   if (searchItem !== "") {
-  //     const newItemList = products.filter((product) => {
-  //       return Object.values(product)
-  //         .join(" ")
-  //         .toLowerCase()
-  //         .includes(searchItem.toLowerCase());
-  //     });
-  //   }
-  // };
-
   return (
     <div className="App">
       <Router>
