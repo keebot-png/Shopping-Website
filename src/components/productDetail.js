@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Outlet } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProductDetails } from '../redux/products/products';
-import "./productDetail.css";
+import './productDetail.css';
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -30,7 +30,10 @@ const ProductDetail = () => {
               </div>
               <div className="column rp">
                 <h1>{title}</h1>
-                <h2 className="ui teal tag label">${price}</h2>
+                <h2 className="ui teal tag label">
+                  $
+                  {price}
+                </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
                 <div className="ui vertical animated button">
