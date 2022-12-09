@@ -1,10 +1,8 @@
 import React from 'react';
 
 const Header = () => (
-  <div className="ui fixed menu">
-    <div className="ui container center">
-      <h2>Shopping Store</h2>
-    </div>
+  <div style={{ display: 'flex', justifyContent: 'center' }} className="ui fixed menu">
+    <h2>Shopping Store</h2>
   </div>
 );
 

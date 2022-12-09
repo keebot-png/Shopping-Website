@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import './productCom.css';
 
 const ProductComponents = ({ products }) => {
   const renderList = products.map((product) => {
@@ -9,8 +10,8 @@ const ProductComponents = ({ products }) => {
     } = product;
 
     return (
-      <div className="twelve wide column" key={id}>
-        <Link to={`/product/${id}`}>
+      <div className="link-container" key={id}>
+        <Link className="gold" to={`/product/${id}`}>
           <div className="ui link cards">
             <div className="card">
               <div className="image">

@@ -27,16 +27,17 @@ const ProductListing = () => {
 
   return (
     <div className="main">
+      <div style={{ display: 'flex', width: '50%', margin: '0 auto' }} className="ui left corner labeled input">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={handleChange}
+        />
+      </div>
 
-      <div className="ui centered grid container">
-        <div className="ui left corner labeled input">
-          <input
-            type="text"
-            placeholder="Search..."
-            value={searchTerm}
-            onChange={handleChange}
-          />
-        </div>
+      <div className="test">
+
         <ProductComponents
           products={searchTerm.length > 0 ? searchResults : products}
         />
